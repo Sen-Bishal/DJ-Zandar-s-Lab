@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project AMPHOREUS Observer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <section class="panel metrics">
+        <h1>Project AMPHOREUS</h1>
+        <p class="subhead">Observer Console</p>
+        <div class="metric-grid">
+          <article>
+            <h2>Cycle Count</h2>
+            <p id="cycle-count">0</p>
+          </article>
+          <article>
+            <h2>Destruction Entropy</h2>
+            <p id="entropy-now">0.000000</p>
+          </article>
+          <article>
+            <h2>Time Concept</h2>
+            <p id="time-concept">active</p>
+          </article>
+          <article>
+            <h2>Samples</h2>
+            <p id="sample-count">0</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel chart">
+        <div class="chart-header">
+          <h2>Destruction Entropy Trajectory</h2>
+          <span class="target">Black Tide at 1.0</span>
+        </div>
+        <svg id="entropy-chart" viewBox="0 0 960 320" preserveAspectRatio="none">
+          <line x1="0" y1="6" x2="960" y2="6" class="target-line" />
+          <polyline id="entropy-polyline" points="" />
+        </svg>
+      </section>
+    </main>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
